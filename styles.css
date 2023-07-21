@@ -8,6 +8,7 @@
     --blue: #2D9CDB;
     --green: #27AE60;
     --red: #EB5757;
+    --violet: #100E1D;
 }
 *{
     margin: 0;
@@ -228,7 +229,7 @@ body{
 
 .input{
     padding: .7rem;
-    border: 1px solid #eee;
+    border: 1px solid #cecece;
     border-radius: .5rem;
     background-color: var(--gray6);
 }
@@ -307,6 +308,202 @@ body{
     border: none;
     background-color: var(--gray2);
     color: var(--gray6);
+}
+
+/* DESIGN */
+
+.design__container{
+    display: grid;
+    gap: 1.5rem
+}
+
+.card__design--content{
+    display: grid;
+    gap: 2rem;
+}
+.design__subtitle{
+    font-size: .75em;
+    color: var(--gray4);
+}
+.design__title{
+    font-size: 1.5em;
+    margin: 0 auto;
+    font-weight: 500;
+    text-align: center;
+    max-width: 290px;
+}
+
+.design__img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.see__more{
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+/* TEAM */
+.team__container{
+    display: grid;
+    gap: 2rem;
+}
+
+.team__info{
+    text-align: center;
+}
+
+.team__subtitle{
+    color: var(--red);
+}
+
+.team__title{
+    color: var(--gray1);
+    font-size: 2em;
+    max-width: 250px;
+    font-weight: 500;
+    margin: .5rem auto;
+}
+
+.team__text{
+    color: var(--gray2);
+}
+
+.team__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+.team__img{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+/* USER */
+
+.opinion__container{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.opinion__title{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.card__user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user__img{
+    border-radius: 1rem;
+    width: 90px;
+    height: 90px;
+}
+
+.user__info{
+    display: grid;
+    gap: 1rem;
+}
+.user__name{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.user__text{
+    font-size: .9em;
+    color: var(--gray2);
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--violet);
+    padding: 2rem 0;
+}
+
+.footer__container{
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+.btn{
+    cursor: pointer;
+}
+
+.footer__link{
+    color: var(--gray4);
+}
+
+.footer__list{
+    display: grid;
+    gap: .5rem;
+}
+
+.footer__logo{
+    font-size: 1.5em;
+    color: var(--gray6);
+    margin-bottom: 1rem;
+}
+
+.redes__links{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.red__link{
+    border: 1px solid #eeeeee63;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    padding: .5rem;
+    border-radius: 100%;
+    transition: .5s ease;
+    color: var(--gray4);
+    font-size: .85em;
+}
+
+.red__link:hover{
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+.form__text{
+    color: var(--gray4);
+}
+
+.form__input--footer{
+    background-color: var(--gray6);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: .5rem;
+}
+
+.input--footer{
+    border: none;
+    border-radius: .5rem 0 0 .5rem; 
+
+}
+
+.btn-join--footer{
+    background-color: var(--blue);
+    border-radius: .5rem;
+    color: var(--gray6);
+    font-family: inherit;
+    border: none;
+}
+
+.text__copy{
+    font-size: .9em;
+    color: var(--gray4);
 }
 
 
@@ -395,6 +592,89 @@ body{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     }
+
+        /* DESIGN */
+
+
+    .card__design--content{
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+        position: relative;
+    }
+    .top{
+        margin-top: 7rem;
+    }
+
+    .see__more{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: var(--blue);
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+    }
+
+    /* TEAM */
+    .team__container{
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+    }
+
+    .team__info{
+        text-align: start;
+    }
+
+    .team__title{
+        margin: 1rem 0;
+    }
+
+    .team__text{
+        max-width: 300px;
+        color: var(--gray2);
+    }
+
+    /* USER */
+    .opinion__title{
+        font-size: 1.8em;
+        max-width: 700px;
+    }
+
+    .opinion__container{
+        gap: 2.5rem;
+    }
+
+    .user__img{
+        width: 105px;
+        height: 105px;
+    }
+
+    .user__name{
+        font-size: 1.3em;
+    }
+
+    .user__text{
+        font-size: 1.1em;
+    }
+
+    /* FOOTER */
+    .footer__container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__logo{
+        margin-top: .5rem;
+    }
+
+    .form__input--footer{
+        background-color: var(--gray6);
+        display: grid;
+        grid-template-columns: 1fr 90px;
+        border-radius: .5rem;
+    }
+
+    
+
 }
 
 @media (min-width: 64rem){

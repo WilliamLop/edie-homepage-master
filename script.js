@@ -61,3 +61,8 @@ navLinks.forEach((navLink, index) => {
     });
 });
 
+
+
+
+
+console.log(btnJoin);
